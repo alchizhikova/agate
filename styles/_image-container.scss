@@ -1,0 +1,15 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1872px;
+    @include center-block;
+    @media screen and (max-width: 1440px) {
+        max-width: 1416px;
+    }
+    @media screen and (max-width: 1024px) {
+        max-width: 994px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 720px;
+    }
+}

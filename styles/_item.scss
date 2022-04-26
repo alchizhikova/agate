@@ -1,0 +1,41 @@
+.item {
+    width: calc((100% - 24px) / 2);
+    &:nth-of-type(2n+1) {
+        margin-right: 24px;
+        @media screen and (max-width: 1024px) {
+            margin-right: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-right: 12px;
+        }
+        @media screen and (max-width: 640px) {
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        width: calc((100% - 10px) / 2);
+    }
+    @media screen and (max-width: 768px) {
+        width: calc((100% - 12px) / 2);
+    }
+    @media screen and (max-width: 640px) {
+        width: 100%;
+    }
+    &:not(:nth-of-type(n+5)) {
+        margin-bottom: 24px;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 12px;
+        }
+    }
+    &:not(:last-of-type) {
+        @media screen and (max-width: 640px) {
+            margin-bottom: 20px;
+        }
+    }
+    & img {
+        width: 100%;
+    }
+}

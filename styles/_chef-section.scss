@@ -1,0 +1,27 @@
+.chef-section {
+    background-color: $light-background;
+    @include center-text;
+    &__status {
+        @include thin-text;
+        color: $third-tcolor;
+        margin-bottom: 30px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__description {
+        @include description-text;
+        max-width: 939px;
+        @include center-block;
+        line-height: 137.3%;
+        @media screen and (max-width: 1024px) {
+            max-width: 691px;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 626px;
+        }
+        @media screen and (max-width: 640px) {
+            max-width: 350px;
+        }
+    }
+}

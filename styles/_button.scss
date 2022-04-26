@@ -1,0 +1,32 @@
+.button {
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    width: 312px;
+    line-height: 60px;
+    @include center-text;
+    @include center-block;
+    transition: all .5s;
+    @media screen and (max-width: 1024px) {
+        width: 248px;
+        line-height: 48px;
+    }
+    &--white {
+        @include button-style($secondary-tcolor, $secondary-tcolor);
+    }
+    &--black {
+        @include button-style($primary-tcolor, $primary-tcolor);
+    }
+    &:hover {
+        background-color: $button-hover;
+        border-color: $button-hover;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+    }
+    &:hover:not(.button--white) {
+        color: $secondary-tcolor;
+    }
+}

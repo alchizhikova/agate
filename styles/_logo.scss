@@ -1,0 +1,11 @@
+.logo {
+    text-transform: uppercase;
+    color: $secondary-tcolor;
+    font-size: 5rem;
+    @media screen and (max-width: 1024px) {
+        font-size: 3.5rem;
+    }
+    @media screen and (max-width: 640px) {
+        margin-bottom: 30px;
+    }
+}

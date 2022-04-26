@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Source Serif Pro';
+}
+
+section:not(.first-section, .restaurant-images),
+.footer {
+    padding: 100px 0;
+    @media screen and (max-width: 1024px) {
+        padding: 80px 0;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 70px 0;
+    }
+    @media screen and (max-width: 640px) {
+        padding: 55px 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}

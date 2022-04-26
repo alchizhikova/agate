@@ -1,0 +1,36 @@
+.description {
+    text-align: left;
+    &__name {
+        font-size: $description-text;
+        font-weight: 400;
+        @media screen and (max-width: 1300px) {
+            font-size: 2.5rem;
+        }
+    }
+    &__info {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $third-tcolor;
+        margin: 15px 0;
+        @media screen and (max-width: 1300px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 1000px) {
+            font-size: 2rem;
+        }
+    }
+    &__price {
+        font-size: 1.8rem;
+        font-weight: 700;
+        @media screen and (max-width: 1300px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 1000px) {
+            font-size: 2rem;
+        }
+    }
+    @media screen and (max-width: 1000px) and (min-width: 761px) {
+        max-width: 348px;
+        margin-left: 24px;
+    }
+}

@@ -1,0 +1,44 @@
+.first-section {
+    padding: 218px 0 185px 0;
+    @include center-text;
+    @media screen and (max-width: 1024px) {
+        padding: 183px 0 153px 0;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 171px 0 99px 0;
+    }
+    &__title {
+        font-size: 8.5rem;
+        line-height: 121.7%;
+        text-transform: uppercase;
+        color: $secondary-tcolor;
+        max-width: 914px;
+        margin: 0 auto 35px;
+        @media screen and (max-width: 1024px) {
+            font-size: 6rem;
+            max-width: 697px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 5rem;
+            max-width: 329px;
+        }
+        @media screen and (max-width: 640px) {
+            font-size: 4.5rem;
+        }
+    }
+    &__description {
+        font-size: 2.5rem;
+        color: $secondary-tcolor;
+        margin-bottom: 60px;
+        @media screen and (max-width: 1024px) {
+            font-size: 1.8rem;
+            margin-bottom: 63px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 66px;
+        }
+        @media screen and (max-width: 640px) {
+            font-size: 1.5rem;
+        }
+    }
+}

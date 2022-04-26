@@ -1,0 +1,23 @@
+.footer {
+    background-color: $dark-background;
+    @include center-text;
+    &__title {
+        font-size: 6.5rem;
+        color: $secondary-tcolor;
+        margin-bottom: 60px;
+        @media screen and (max-width: 1024px) {
+            font-size: 5rem;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 4rem;
+        }
+        @media screen and (max-width: 640px) {
+            font-size: 3rem;
+        }
+    }
+    &__work-time {
+        @include thin-text;
+        color: #B1B1B1;
+        margin: 60px 0;
+    }
+}

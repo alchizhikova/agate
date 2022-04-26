@@ -1,0 +1,24 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 44px 359px 45px 372px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 2500px) {
+        padding: 44px 550px 45px 564px;
+    }
+    @media screen and (max-width: 1440px) {
+        padding: 44px 118px 45px 132px;
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 13px 31px 13px 42px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 8px 13px 8px 24px;
+    }
+    @media screen and (max-width: 640px) {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+}

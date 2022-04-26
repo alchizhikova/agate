@@ -1,0 +1,18 @@
+.chef-image {
+    margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+    & img {
+        max-width: 398px;
+        @media screen and (max-width: 1024px) {
+            max-width: 282px;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 251px;
+        }
+        @media screen and (max-width: 640px) {
+            max-width: 220px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.description-section {
+    background-color: $light-background;
+    @include description-text;
+    @include center-text;
+    line-height: 135.8%;
+    &__content {
+        max-width: 941px;
+        @include center-block;
+        @media screen and (max-width: 1024px) {
+            max-width: 602px;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 541px;
+        }
+        @media screen and (max-width: 640px) {
+            max-width: 350px;
+        }
+    }
+}
